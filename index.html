@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Link CSS-->
+<link rel="stylesheet" href="styles.css">
+    <title>EcoFuture Uganda</title>
+<body>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <br><div class="toggleTheme">
+    <button onclick="toggleTheme()">Toggle Theme</button> 
+    </div>  
+  </br> <div class="nav-buttons">
+      <a class="animate-on-scroll" href="services.html" class="btn btn-services">Resources and Partners</a>
+      <a class="animate-on-scroll" href="projects.html" class="btn btn-projects">Projects</a>
+      <a class="animate-on-scroll" href="blog.html" class="btn btn-blog">Blog</a>
+      <a class="animate-on-scroll" href="contact.html" class="btn btn-contact-us">Contact Us</a>
+  </nav>
+<main>
+  <!-- Hero Section -->
+  <header id="home" class="hero" style="background-image: url('hero-background.jpg');">
+    <div class="hero-text">       
+    <div class="header-content">
+      <h1 class="animate-on-scroll">EcoFuture Uganda</h1>
+      <p class="animate-on-scroll">"Empowering sustainable practices for a better tomorrow"</p>
+    </div>
+  </header>
+      <h1 class="animate-on-scroll">Empowering Sustainable Futures</h1>
+      <p class="animate-on-scroll">Through Skills and Innovations</p>
+    </div>
+  </header>      
+<section id="cta">
+  <div class="cta-content">
+    <h2 class="animate-on-scroll">Take Action Today!</h2>
+    <p class="animate-on-scroll">Be part of the solutions.</p>
+    <p class="animate-on-scroll">Visit our solutions page here it will help you, know other sustainable energy resources.</p>
+    <div class="cta-buttons">
+      <a class="animate-on-scroll" href="solutions.html" class="btn">Look Up</a>
+      <a class="animate-on-scroll" href="contact.html" class="btn btn-primary">Get Started</a>
+    </div>
+  </div>
+</section>
+<section id="trial">
+    <div class="trial-content">
+<h2 class="animate-on-scroll">The Uganda That We Need Has To;</h2>
+<p><h4 class="animate-on-scroll">Be strategically</h4></p>
+<p><h4 class="animate-on-scroll">Be with development</h4></p>
+<P><h4 class="animate-on-scroll">Be protective to us the citizens</h4></P>
+<p><h4 class="animate-on-scroll">Be supportive in innovations</h4></p>
+  </div>
+  </section>
+</main>
+  <footer>
+    <p  class="animate-on-scroll">&copy; 2025 Sustainable Living. All rights reserved|<a href="terms.html">Terms and Conditions</a></p>
+     </footer>
+    <script> 
+    function toggleTheme() {
+      console.log('Button clicked');
+      document.body.classlist.toggle('dark-theme');
+    }
+    const elements = document.querySelectorAll('.animate-on-scroll');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+    elements.forEach((el) => observer.observe(el));
+      </script>
+    </body></html>

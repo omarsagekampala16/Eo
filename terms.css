@@ -1,0 +1,8 @@
+.accordian {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+.accordian.open {
+    max-height: 500px;
+}

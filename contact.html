@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: 'Arial', 'Verdana', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #4caf50, #00bcd4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .content-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 80%;
+      max-width: 1200px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      box-shadow: 0 40px 8px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+    }
+    .contact-form, .contact-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .contact-form input, .contact-form textarea {
+      padding: 12px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      font-size: 16px;
+      width: 100%;
+    }
+    .contact-form input::placeholder, .contact-form textarea::placeholder {
+      font-style: italic;
+      color: #999;
+    }
+    .contact-form button {
+      padding: 12px 25px;
+      background-color: #4caf50;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .contact-form button:hover {
+      background-color: #388e3c;
+    }
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+    .contact-info div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .contact-info a {
+      color: #333;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+    .contact-info a:hover {
+      color: #00bcd4;
+    }
+    .contact-info i {
+      font-size: 24px;
+      color: #4caf50;
+    }
+    /*Responsive Design */
+    @media (max-width: 768px) {
+      .contact-container {
+        flex-direction: column;
+        gap: 30px;
+      }
+      .contact-form, .contact-info {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-container">
+    <!--Left Column (Form) -->
+    <div class="contact-form">
+      <input type="text" placeholder="Enter your name" required>
+      <input type="email" placeholder="Enter your email" required>
+      <textarea placeholder="Enter your message" rows="4" required></textarea>
+      <button type="submit">Submit</button>
+    </div>
+    <!--Right Column (Contact Info)-->
+    <div class="contact-info">
+      <div>
+        <i class="fas fa-envelope"></i>
+        <a href="info.ecofutureuganda@gmail.com">info.ecofutureuganda@gmail.com</a>
+      </div>
+      <div>
+        <i class="fas fa-phone"></i>
+        <a href="tel:+25674795195">+256747951295</a>
+      </div>
+      <div>
+        <i class="fab fa-instagram"></i>
+        <a href="https://www.instagram.com" target="_blank">Intagram</a>
+      </div>
+    </div>
+  </div>
+  <!-- Include Font Awesome for Icons -->
+  <script src="https://kit.fontawesom.com/a076bd05399"></script>
+</body>
+</html>
